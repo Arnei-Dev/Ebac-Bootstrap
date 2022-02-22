@@ -75,3 +75,9 @@ footer p {
 #produtos {
     background-color: #FFF8DC;
 }
+
+@media (max-width: 800px) {
+    .offcanvas.show {
+        width: 40%;
+    }
+}
