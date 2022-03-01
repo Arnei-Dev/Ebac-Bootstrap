@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/custom.css">
+    <link rel="stylesheet" href="./bootstrap/fontawesome-free-6.0.0-web/css/brands.min.css">
+    <link rel="stylesheet" href="./bootstrap/fontawesome-free-6.0.0-web/css/fontawesome.min.css">
+    <title>Spring</title>
+</head>
+<body>
+
+    <header class="fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-light bg-light fixed-top">
+                        <div class="container-fluid">
+                            <div class="col logo">
+                                <img src="./images/logo.png" alt="logo">
+                                <p>Spring Flowers</p> 
+                            </div>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="offcanvas offcanvas-end navback" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
+                              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#sobre">Sobre</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#produtos">Produtos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contato">Contato</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+    <!--Carrousel-->
+
+     <section class="container-carousel">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner"> 
+                          <div class="carousel-item active">
+                            <div class="ratio ratio-21x9">
+                                <img src="./images/Carrousel-1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="ratio ratio-21x9"><!--Renderiza tamanho do arquivo slide ou video-->
+                                <img src="./images/Carrousel-2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="ratio ratio-21x9">
+                                <img src="./images/Carrousel-3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!--End Carrousel-->
+
+    <section id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <h1>Sobre</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni iste a dolores ullam ducimus placeat repudiandae necessitatibus eius quod architecto, labore debitis voluptatem sapiente dolorum dolor aliquid ipsa sit cumque!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cumque tempora tempore cupiditate deserunt ducimus iste vel pariatur amet, voluptatibus aliquid at impedit sequi. Placeat nobis illum nam temporibus praesentium.</p>
+                    <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-delivery">Delivery</a>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <img src="./images/flowers.jpg" alt="Imagem Exemplo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <div class="container">
+            <div class="row">
+                <h2>Buques:</h2>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <img src="./images/buque01.jpg" alt="" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Buque Passion</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur Consectetur.
+                            </p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">VER PREÇO R$</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <img src="./images/buque02.jpg" alt="" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Buque Wedding</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur Consectetur.
+                            </p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">VER PREÇO R$</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <img src="./images/buque03.jpg" alt="" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Buque Valentine's Day</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur Consectetur.
+                            </p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">VER PREÇO R$</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container corfundo">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2>Contato</h2>
+                    <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação.</p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <form class="form">
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="nome" placeholder="Digite seu nome">
+                        </div>
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="e-mail" placeholder="Digite seu e-mail">
+                        </div>
+                        <div class="input-group">
+                            <textarea class="form-control" name="" id="" rows="5"></textarea>
+                        </div>
+                        <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-cotacao">Solicitar Cotação</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modal-delivery">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">DISK FLOWERS</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Entregamos até você!</h6>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>DELIVERY</th>
+                                <th>(11)92525-9898</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="modal-imagem">
+                        <img src="./images/deliveryFlowers.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#produtos" class="btn btn-success" >Produtos</a>
+                    <a href="./formulario.html" class="btn btn-success">Local da entrega</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buque Passion</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os tamanhos e preços</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Tamanho</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>P</td>
+                                <td>R$ 200,00</td>
+                                <td>
+                                    <a class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#buquePassion1P">Comprar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>R$ 300,00</td>
+                                <td>
+                                    <a class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#buquePassion1M">Comprar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>G</td>
+                                <td>R$ 450,00</td>
+                                <td>
+                                    <a class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#buquePassion1G">Comprar</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <!--Buque 2-->
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buque Wedding</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os tamanhos e preços</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Tamanho</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>P</td>
+                                <td>R$ 250,00</td>
+                                <td>
+                                    <a class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#buqueWedding2P">Comprar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>R$ 380,00</td>
+                                <td>
+                                    <a class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#buqueWedding2M">Comprar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>G</td>
+                                <td>R$ 500,00</td>
+                                <td>
+                                    <a class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#buqueWedding2G">Comprar</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Buque 3-->
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buque Valentine's Day </h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os tamanhos e preços</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Tamanho</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>P</td>
+                                <td>R$ 240,00</td>
+                                <td>
+                                    <a class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#buqueValentinesDay3P">Comprar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>R$ 320,00</td>
+                                <td>
+                                    <a class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#buqueValentinesDay3M">Comprar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>G</td>
+                                <td>R$ 425,00</td>
+                                <td>
+                                    <a class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#buqueValentinesDay3G">Comprar</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--TAMANHO PRODUTO SELECIONADO-->
+
+    <!--Buque Passion 1P-->
+    <div class="modal fade" id="buquePassion1P">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">BUQUE PASSION</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Tamanho P</th>
+                                <th>R$ 200,00</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="modal-imagem">
+                        <img src="./images/buque01.jpg" alt="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar compra</button>
+                    <a href="./formulario.html" class="btn btn-success">Local da entrega</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--buque 1M-->
+    <div class="modal fade" id="buquePassion1M">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">BUQUE PASSION</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Tamanho M</th>
+                                <th>R$ 300,00</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="modal-imagem">
+                        <img src="./images/buque01.jpg" alt="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar compra</button>
+                    <a href="./formulario.html" class="btn btn-success">Local da entrega</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--buque 1G-->
+    <div class="modal fade" id="buquePassion1G">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">BUQUE PASSION</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Tamanho G</th>
+                                <th>R$ 450,00</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="modal-imagem">
+                        <img src="./images/buque01.jpg" alt="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar compra</button>
+                    <a href="./formulario.html" class="btn btn-success">Local da entrega</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Buque wedding-->
+    <!--Buque 2P-->
+
+    <div class="modal fade" id="buqueWedding2P">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">BUQUE WEDDING</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Tamanho P</th>
+                                <th>R$ 250,00</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="modal-imagem">
+                        <img src="./images/buque02.jpg" alt="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar compra</button>
+                    <a href="./formulario.html" class="btn btn-success">Local da entrega</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Buque 2M-->
+
+    <div class="modal fade" id="buqueWedding2M">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">BUQUE WEDDING</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Tamanho M</th>
+                                <th>R$ 380,00</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="modal-imagem">
+                        <img src="./images/buque02.jpg" alt="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar compra</button>
+                    <a href="./formulario.html" class="btn btn-success">Local da entrega</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Buque 2G-->
+
+    <div class="modal fade" id="buqueWedding2G">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">BUQUE WEDDING</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Tamanho G</th>
+                                <th>R$ 500,00</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="modal-imagem">
+                        <img src="./images/buque02.jpg" alt="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar compra</button>
+                    <a href="./formulario.html" class="btn btn-success">Local da entrega</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Buque Valentine's Day-->
+    <!--Buque 3P-->
+
+    <div class="modal fade" id="buqueValentinesDay3P">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">BUQUE VALENTINE'S DAY</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Tamanho P</th>
+                                <th>R$ 240,00</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="modal-imagem">
+                        <img src="./images/buque03.jpg" alt="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar compra</button>
+                    <a href="./formulario.html" class="btn btn-success">Local da entrega</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Buque 3M-->
+
+    <div class="modal fade" id="buqueValentinesDay3M">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">BUQUE VALENTINE'S DAY</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Tamanho M</th>
+                                <th>R$ 320,00</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="modal-imagem">
+                        <img src="./images/buque03.jpg" alt="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar compra</button>
+                    <a href="./formulario.html" class="btn btn-success">Local da entrega</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Buque 3G-->
+
+    <div class="modal fade" id="buqueValentinesDay3G">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">BUQUE VALENTINE'S DAY</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Tamanho G</th>
+                                <th>R$ 425,00</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="modal-imagem">
+                        <img src="./images/buque03.jpg" alt="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar compra</button>
+                    <a href="./formulario.html" class="btn btn-success">Local da entrega</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Cotação-->
+    <div class="modal fade" id="modal-cotacao">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">OBRIGADO!</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Solicitação Concluída!</h6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+            <p>&copy; SPRING. Todos os diretiros reservados. 
+            <small>Desenvolvido por: Mário Dias</small></p> 
+    </footer>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap/fontawesome-free-6.0.0-web/js/brands.min.js"></script>
+    <script src="./bootstrap/fontawesome-free-6.0.0-web/js/fontawesome.min.js"></script>
+    <script>
+        var myCarousel = document.querySelector('#carouselExampleFade')
+        var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 2000
+        })
+    </script>
+</body>
+</html>
