@@ -1,0 +1,83 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Island+Moments&family=Raleway:wght@300&family=Vujahday+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Island+Moments&family=Raleway:wght@300&family=Vujahday+Script&display=swap');
+
+* {
+    font-family: 'Comfortaa', cursive;
+}
+
+.navbar,
+.navback {
+    background-color: #FFF8DC !important;
+}
+
+section {
+    padding-bottom: 4rem;
+    padding-top: 8rem;
+}
+
+input,
+textarea {
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #FFF8DC;
+    height: 90px;
+}
+footer small {
+    display: block;
+}
+
+footer p {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.btn:hover {
+    background-color: #ff007f;
+    border: none;
+}
+
+#contato {
+    background-image: url(../images/springBack.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.corfundo {
+    background-color: rgba(255, 255, 240, .7);
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo p {
+    font-family: 'Island Moments', cursive;
+    font-size: 2rem;
+}
+
+.logo img {
+    border-radius: 50%;
+    padding-top: .5rem;
+}
+
+.modal-imagem img {
+    width: 100%;
+}
+
+#produtos {
+    background-color: #FFF8DC;
+}
+
+@media (max-width: 800px) {
+    .offcanvas.show {
+        width: 40%;
+    }
+}

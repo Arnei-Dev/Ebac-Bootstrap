@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/custom.css">
+    <link rel="stylesheet" href="./style/custom-form.css">
+    <title>Spring</title>
+</head>
+<body>
+
+    <header class="fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-light bg-light fixed-top">
+                        <div class="container-fluid">
+                            <div class="col logo">
+                                <img src="./images/logo.png" alt="logo">
+                                <p>Spring Flowers</p> 
+                            </div>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="offcanvas offcanvas-end navback" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
+                              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                  <a class="nav-link active" aria-current="page" href="./bootstrap-02.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="./bootstrap-02.html#sobre">Sobre</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./bootstrap-02.html#produtos">Produtos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./bootstrap-02.html#contato">Contato</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="formulario">
+        <div class="container corfundo">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <h2>Cadastrar endereço</h2>
+                    <p>Faça seu cadastro para receber seu pedido na sua casa.</p>
+                </div>
+                <form class="form">
+                    <div class="row">
+                        <div class="col">
+                            <label for="nome" class="col-form-label-sm">Nome</label>
+                            <input class="form-control" type="text" name="nome" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="col">
+                            <label for="e-mail" class="col-form-label-sm">E-mail</label>
+                            <input class="form-control" type="text" name="e-mail" placeholder="Digite seu e-mail" required>
+                        </div>
+                        <div class="col">
+                            <label for="telefone" class="col-form-label-sm">Telefone</label>
+                            <input class="form-control" type="text" name="telefone" id="telefone" placeholder="(xx) 99999-9999" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="endereco" class="col-form-label-sm">Lagradouro</label>
+                            <input type="text" class="form-control" id="endereco" placeholder="Lagradouro" required>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="numero" class="col-form-label-sm">N°</label>
+                            <input type="text" class="form-control" id="numero" placeholder="Número" required>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="complemento" class="col-form-label-sm">Complemeto</label>
+                            <input type="text" class="form-control" id="endereco" placeholder="Ex: Ap, Casa...">
+                        </div> 
+                        <div class="col-md-4">
+                            <label for="bairro" class="col-form-label-sm">Bairro</label>
+                            <input type="text" class="form-control" id="bairro" placeholder="Digite seu bairro" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="cidade" class="col-form-label-sm">Cidade</label>
+                            <input type="text" name="cidade" id="cidade" class="form-control" placeholder="Digite sua cidade">
+                        </div>
+                        <div class="col">
+                            <label for="estado" class="col-form-label-sm">Estado</label>
+                            <select name="estado" id="estado" class="form-control">
+                                <option value="">Selecione um estado</option>
+                                <option value="sp">SP</option>
+                                <option value="al">AL</option>
+                                <option value="mg">MG</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="cep" class="col-form-label-sm">CEP</label>
+                            <input type="text" name="cep" id="cep" class="form-control" placeholder="00000-000">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group">
+                               <label for="info" class="col-form-label-sm">Informações</label>
+                               <textarea class="form-control" name="informacoes" id="info" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-check">
+                                <input type="checkbox" name="promocionais" id="promocionais">
+                                <label for="promocionais" class="form-check-label col-form-label-sm">Aceito receber mensagens promocionais</label>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <button type="submit" class="btn btn-lg btn-success">Realizar cadastro</button>
+                    
+                </form>
+                <p> <a href="#cadastro" data-bs-toggle="modal" data-bs-target="#modal-1">Cadastre-se </a>para não perder novidades.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Escrever-me na lista</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Preencha os campos para receber novidades e promoções</h6>
+                    <form class="form-inline">
+                        <input type="text" class="form-control form-control-sm mb-2" name="nome" placeholder="nome">
+                        <input type="text" class="form-control form-control-sm mb-2" name="nome" placeholder="e-mail" required>
+                        <button type="submit" class="btn btn-success">Receber novidades</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary mb-2" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+       <p>&copy; SPRING. Todos os diretiros reservados. 
+       <small>Desenvolvido por: Mário Dias</small></p> 
+    </footer>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
